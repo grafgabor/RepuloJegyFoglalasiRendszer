@@ -15,7 +15,7 @@ def kezdo_adatok_betoltese() -> FoglalasiRendszer:
 
     rendszer = FoglalasiRendszer(legi_tarsasag)
 
-    # 6 előre betöltött foglalás, mindig mai vagy jövőbeli dátummal.
+    # 6 előre betöltött foglalás mindig mai vagy jövőbeli dátummal.
     mai_nap = date.today()
     rendszer.jegy_foglalasa("Kiss Anna", "PA101", mai_nap + timedelta(days=5))
     rendszer.jegy_foglalasa("Nagy Péter", "PA102", mai_nap + timedelta(days=7))
